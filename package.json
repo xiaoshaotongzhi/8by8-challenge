@@ -2,7 +2,18 @@
   "name": "8by8-challenge",
   "version": "0.1.0",
   "private": true,
+  "description": "A tool to generate API documentation for GitHub Wiki using TypeDoc.", 
+  "main": "scripts/process-docs.js", 
+  "keywords": ["typedoc", "github-wiki", "api-reference"], 
+  "author": "Your Name <your-email@example.com>", 
+  "license": "MIT", 
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YihanSao/8by8-challenge.git"
+  },
   "scripts": {
+     "docs": "typedoc",
+     "publish-npm": "npm publish",
     "supabase-dev:start": "supabase start",
     "supabase-dev:stop": "supabase stop --project-id 8by8-challenge",
     "supabase-test:start": "node scripts/link-or-copy-migrations.js && cd src/__tests__ && supabase start",
@@ -78,6 +89,8 @@
     "sass": "^1.72.0",
     "storybook": "^8.3.5",
     "supabase": "^1.187.10",
+    "typedoc": "^0.28.1",
+    "typedoc-plugin-markdown": "^4.5.2",
     "typescript": "^5",
     "uuid": "^10.0.0"
   }

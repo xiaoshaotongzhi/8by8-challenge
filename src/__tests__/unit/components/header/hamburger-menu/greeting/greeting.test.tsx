@@ -31,7 +31,7 @@ describe('Greeting', () => {
   });
 
   it("Displays the user's avatar.", () => {
-    const user = Builder<User>().name('Test').avatar(4).build();
+    const user = Builder<User>().name('Test').avatar('0').build(); //avatar 
     const userCtxValue = Builder<UserContextType>().user(user).build();
     render(
       <UserContext.Provider value={userCtxValue}>

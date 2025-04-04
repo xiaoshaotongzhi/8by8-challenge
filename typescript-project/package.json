@@ -1,0 +1,33 @@
+{
+  "name": "typescript-project",
+  "version": "1.0.0",
+  "description": "A TypeScript project for demonstrating API documentation generation.",
+  "main": "src/app.ts",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/app.js",
+    "dev": "ts-node src/app.ts",
+    "test": "jest",
+    "generate-docs": "typedoc --out docs/API_Reference --exclude README.md --mode file --theme default src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/typescript-project.git"
+  },
+  "keywords": [
+    "typescript",
+    "api",
+    "documentation"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "typescript": "^4.5.4",
+    "ts-node": "^10.4.0",
+    "jest": "^27.0.6",
+    "typedoc": "^0.22.0"
+  }
+}
